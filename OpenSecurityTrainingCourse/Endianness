@@ -1,0 +1,11 @@
+Endianness: (Gulliver's Travels)
+-storage into RAM - little end first
+-0x12345678 -> intel: 0x78 0x56 0x34 0x12
+
+-network traffic: Big Endian 0x12 0x34 0x56 0x78
+-Endianness applies to memory
+-Endianness applies to bytes not bits (8 bit segments)
+-one byte not affected 
+
+-Little Endian (intel): least significant byte goes into low memory address
+-Big Endian (others): most significant byte goes into low memory address

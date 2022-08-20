@@ -1,0 +1,7 @@
+RAX - stores function return values
+RCX - counter for string and loop operations
+RSI - source index pointer for string operations
+RDI - destination index pointer for string operations
+RSP - Stack top pointer
+RBP - Stack frame base pointer
+RIP - Pointer to next instruction to execute (instruction pointer)

@@ -1,0 +1,7 @@
+char is a single byte - 8 bit
+short is two bytes - 16 bit - word (intel's native 16 bit data size)
+double word is four bytes - 32 bits - DWORD
+double/long long - eight bytes - 64 bits  - QWORD
+
+(1hex is 4 bits)
+1 bytes = 8 bits = 2 hex

@@ -1,0 +1,20 @@
+X86 Assembly
+-8086: 16 bit
+-backward compatibility by intel chips
+-move to 64 bit - Itanium
+-extended to x86 to 64 
+
+x86-64 used:
+-Most desktop systems, servers and super-computers
+
+
+-translation from c to asm
+-only 14 assembly instructions account for 90% of code
+-knowing 20-30 assembly instruction is good enough
+
+outcome:
+-learn x86-64 gen purpose registers and their 32 and 16 bit sub-registers
+-local var or return addresses are stored on the stack
+-understand function calls
+-write c code in an IDE and step through and see the disassembly
+-Final Binary Bomb Lab: final test

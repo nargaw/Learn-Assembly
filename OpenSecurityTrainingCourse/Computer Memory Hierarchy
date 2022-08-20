@@ -1,0 +1,6 @@
+Small size : very short term, very fast and very expensive, need power on => Processor registers *ASSEMBLY IS HERE*
+Small size: intermediate short term, very fast and very expensive, need power on => cache
+Medium size: short term, fast and affordable, need power on => RAM
+large size: short term, slow and cheap, power off => Flash/USB memory
+very large size: mid term, slow and very cheap, power off => Hard drives
+very large size: long term, very slow and affordable, power off => Tape backup

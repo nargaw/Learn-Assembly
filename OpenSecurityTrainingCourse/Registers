@@ -1,0 +1,11 @@
+Registers are small memory storage areas built into the processor
+-volatile 
+-16 genral purpose registers + instruction point which points at the next instruction to execute
+-2/16 are not general
+-x86-32 registers are 32 bits wide
+-x86-64 registers are 64 bits wide
+
+8008: 8 bit A register only
+16-bit 8086: AX register (A extended) that can access AH (A high) and AL (A low) ==> RW -Word
+32-bit 80386: EAX register ( AX extended) that can access AH and AL sub-registers of AX ==> R0D-Double word
+64-bit: RAX register (R0 or Really extended EAX) ==> R0
