@@ -1,0 +1,6 @@
+first asm instruction
+1. NOP - no operation, no registers, no values 
+-used for pad/align bytes or delay time
+-attackers use it to make simple exploits more reliable
+-XCHG (E)AX with (E)AX exhange with itself
+-0x90: cononical

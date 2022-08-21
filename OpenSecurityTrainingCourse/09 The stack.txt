@@ -1,0 +1,9 @@
+Stack - last in first out structure
+-data is pushed to the top and popped off the top
+-stack grows down to low addresses
+-return addresess = so called function can return back to the function that called it
+-local variables are stored on the stack
+-compiler may share registers without smashing the values for each other
+-save space for registers when compiler has to juggle too many in a function
+-dynamically allocated memory via alloca()
+
