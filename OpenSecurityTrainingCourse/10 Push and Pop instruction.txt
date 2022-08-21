@@ -1,1 +1,25 @@
-Push: quad word 
+Push and pop - balanced
+
+Push - quad word
+-decrements RSP (stack pointer) by 8 
+-64-bit execution mode, two ways:
+1. value in 64-bit register
+2. 64-bit value from memory
+-r/m16, r/m32, r/m64 
+-"r/mx" addressing from - reference a pointer
+1. Register -> rbx (literal value)
+2. memory, base only -> [rbx] (address)
+3. memory, base + index * scale -> [rbx + rcx * X] (X = 1, 2, 4 or 8)
+4. memory, base + index * scale + displacement -> [rbx + rcx * X + Y] (y of 1 byte(0 - 2^8) or 4 bytes(0 - 2^32))
+-multi-dimensional array indexing, arrays of structs use #4
+* ` - backtic convention when writing 64 bit numbers
+RSP decremented by 8 and value is pushed
+
+Pop - pops value from the stack
+-can be 64-bit register 
+-can be 64-bit memory address in the form of "r/mx"
+RSP incremented by 8 (8 bytes = 64 bits) and value is popped
+-assembly pushes/pops with the same size as a pointer
+
+(32 bit - decrement and increment 4 (4 bytes = 32 bits))
+(16 bit - decrement and increment 2 (2 bytes = 16 bits))
