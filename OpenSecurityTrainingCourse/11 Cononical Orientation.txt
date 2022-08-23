@@ -1,2 +1,6 @@
-Rsp + down
-rbp - up
+Rsp + up - down
+rbp - down + up
+
+1. The address offset 
+-one movement is 0x08 and seven movements are 0x40
+2. High and low addresses 

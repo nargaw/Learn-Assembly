@@ -1,0 +1,5 @@
+Call - call procedure
+-transfer control to a different function
+-pushes the address of the next instruction onto the stack
+-moves rsp down by 8
+-destination
