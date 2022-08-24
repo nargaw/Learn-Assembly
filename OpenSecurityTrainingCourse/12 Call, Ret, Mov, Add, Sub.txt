@@ -1,5 +1,44 @@
-Call - call procedure
+A. Call - call procedure
 -transfer control to a different function
--pushes the address of the next instruction onto the stack
+-pushes the address of the next instruction (return address) onto the stack
 -moves rsp down by 8
--destination
+-changes RIP to the address given in the instruction
+-destination: 
+    a. Absolute address
+    b. Relative address
+
+B. Ret - Return from procedure 
+-Two forms
+    a. Pop the top of the stack into RIP
+    -pop implicitly increments stack pointer (RSP) -> written as Ret
+    b. pop the top of the satck into RIP and also add a constant number of bytes to RSP
+    -instruction written as "ret 0x8" or "ret 0x20" etc
+
+Intel vs AT&T sysntax
+
+-Intel: Destination <- Source(s) (right to left)
+-Windows. Think algebra or C: y = 2x + 1;
+mov rbp, rsp
+add rsp, 0x14 (rsp = rsp + 0x14)
+
+-AT&T: Source(s) -> Destination (left to right)
+-*nix/GNU. Think elementary school: 1 + 2 = 3;
+mov %rsp, %rbp
+add $0x14, %rsp
+-registers get a '%' prefix and immediates get a '$' prefix
+
+
+C. Mov - can move
+    a. Register to Register
+    b. Memory to Register, register to Memory
+    c. Immediate to register, immediate to Memory
+-never memory to memory
+-memory addresses are given in "r/mX" form
+
+D and E. ADD and SUB
+-adds or subtracts just as expected
+-destination operand can be r/mX or register
+-source operand can be r/mX or register or immediate
+-no source and destination as r/mXs, b/c it could allow for memory to memory transfer (not allowed on x86)
+add rsp, 8 -> (rsp = rsp + 8)
+sub rax, [rbx*2] -> (rax = rax - memoryPointedToBy(rbx*2))
