@@ -1,0 +1,10 @@
+Stack bottom 
+- return address to return from main() to invoke_main()
+|
+Function called within main return address
+|
+Addtional function called within the function called by main return address
+|
+Stack Top
+
+-wheneve there is a push operation, the stack gets decremented first, then the value is pushed to the stack (NOT VICE VERSA)

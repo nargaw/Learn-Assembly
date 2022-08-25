@@ -1,1 +1,4 @@
 1. Why do GCC/Clang HelloWorlds have balanced Push/Pop instructions but visual studio doesn't?
+
+2. Why sub/add 0x28 in main()?
+
